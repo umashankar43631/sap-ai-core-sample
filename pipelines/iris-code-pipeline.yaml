@@ -9,7 +9,7 @@ metadata:
     executables.ai.sap.com/name: "iris flower (Sklearn Example)"
   labels:
     scenarios.ai.sap.com/id: "learning-code"
-    ai.sap.com/version: "3.0"
+    ai.sap.com/version: "4.0"
 spec:
   imagePullSecrets:
     - name: irisdatareposapveg # your docker registry secret
@@ -22,7 +22,7 @@ spec:
 
   - name: mycodeblock1
     container:
-      image: docker.io/umashankar8331/aicore_application:1.0.5 # Your docker image name
+      image: docker.io/umashankar8331/aicore_application:1.1.0 # Your docker image name
       command: ["/bin/sh", "-c"]
       args:
         - "python main.py"
